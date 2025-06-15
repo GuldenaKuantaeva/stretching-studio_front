@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   $production: {
     runtimeConfig: {
       public: {
-        apiBase: process.env.NUXT_API_BASE // add api base for production
+        apiBase: `https://${process.env.NUXT_API_BASE}` // add api base for production
       }
     }
   },
